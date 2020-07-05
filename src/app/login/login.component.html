@@ -1,0 +1,19 @@
+<div class="container">
+    <form [formGroup]="form">
+        <div class="logo">
+        </div>
+        <h1>Mega Millon</h1>
+        <fieldset>
+            <legend>Usuario</legend>
+            <input name="user" formControlName="user" required>
+            <mat-icon class="refresh">person</mat-icon>
+        </fieldset>
+        <fieldset>
+            <legend>Password</legend>
+            <input name="password" formControlName="password" type="password" required>
+            <mat-icon class="refresh">lock</mat-icon>
+        </fieldset>
+        <button class="btn" (click)="loginadm()" (click)="loginop()" (click)="loginag()">Login <i
+                class="fas fa-chevron-right"></i></button>
+    </form>
+</div>

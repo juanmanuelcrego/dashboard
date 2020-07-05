@@ -1,0 +1,245 @@
+        <section class="accordion">
+          <!-- Reporte de ganancia -->
+          <mat-accordion>
+            <mat-expansion-panel hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Reporte ganancia
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <app-filter></app-filter>
+              <table>
+                <tr>
+                    <th>Dato 1</th>
+                    <th>Dato 2</th>
+                    <th>Dato 3</th>
+                    <th>Dato 4</th>
+                  </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <th>Total</th>
+                  <th colspan="3">$000000</th>
+                </tr>
+              </table>
+              <app-export></app-export>
+            </mat-expansion-panel>
+            <!-- Reporte de ganancia consolidada anual -->
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Reporte ganancia consolidada anual
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <app-filter></app-filter>
+              <table>
+                <tr>
+                    <th>Dato 1</th>
+                    <th>Dato 2</th>
+                    <th>Dato 3</th>
+                    <th>Dato 4</th>
+                  </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <th>Total</th>
+                  <th colspan="3">$000000</th>
+                </tr>
+              </table>
+              <app-export></app-export>
+            </mat-expansion-panel>          
+          </mat-accordion>      
+  
+          <!-- Reporte CARTONES -->
+          <mat-accordion>
+            <mat-expansion-panel hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Reporte cartones vendidos
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <app-filter></app-filter>
+              <table>
+                <tr>
+                    <th>Dato 1</th>
+                    <th>Dato 2</th>
+                    <th>Dato 3</th>
+                    <th>Dato 4</th>
+                  </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <th>Total</th>
+                  <th colspan="3">$000000</th>
+                </tr>
+              </table>
+              <app-export></app-export>
+            </mat-expansion-panel>
+            <!-- CARTONES POR AGENCIA -->
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Reporte cartones ganadores
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <app-filter></app-filter>
+              <table>
+                <tr>
+                    <th>Dato 1</th>
+                    <th>Dato 2</th>
+                    <th>Dato 3</th>
+                    <th>Dato 4</th>
+                  </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <th>Total</th>
+                  <th colspan="3">$000000</th>
+                </tr>
+              </table>
+              <app-export></app-export>
+            </mat-expansion-panel>          
+          </mat-accordion>   
+          
+          <!-- INCREMENTO POZOS -->
+          <mat-accordion>
+            <mat-expansion-panel hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Reporte notificaciones
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <app-filter></app-filter>
+              <table>
+                <tr>
+                    <th>Dato 1</th>
+                    <th>Dato 2</th>
+                    <th>Dato 3</th>
+                    <th>Dato 4</th>
+                  </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                  <td>Dato</td>
+                </tr>
+                <tr>
+                  <th>Total</th>
+                  <th colspan="3">$000000</th>
+                </tr>
+              </table>
+              <app-export></app-export>
+            </mat-expansion-panel>
+            </mat-accordion>
+        </section>
+  
+  
+     

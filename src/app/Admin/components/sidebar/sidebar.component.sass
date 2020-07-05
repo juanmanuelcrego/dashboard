@@ -1,0 +1,48 @@
+.sidebar
+        font-family: 'Montserrat Alternates', sans-serif
+        display: flex
+        flex-flow: column
+        align-content: center
+        align-items: center
+        justify-content: space-between
+        min-width: 20vw
+        min-height: 100vh
+        border-right: 01px #333
+        color: #eee
+        position: fixed
+        background: linear-gradient(180deg, rgba(227, 40, 62, 0.09) 0%, rgba(255, 255, 255, 0) 50%, rgba(227, 40, 62, 0.05) 100%), #111111
+        .ul
+            top: 02vh
+            display: flex
+            flex-flow: column
+            align-content: center
+            align-items: center
+            a
+                color: #eee
+            .logo
+                width: 80px
+                height: 80px
+                background-image: url('../../../../assets/Logo.png')
+                background-size: cover
+                background-repeat: no-repeat
+            h1, h3
+                font-family: 'Montserrat Alternates', sans-serif
+            ul  
+                list-style: none
+                margin: 0
+                padding: 0
+                li
+                    display: flex
+                    align-content: center
+                    align-items: center
+                    list-style: none
+                    margin: 0
+                    padding: 10px
+                    transition: 01s
+                    cursor: pointer
+                    &:hover
+                        background-color: #111
+                        border-radius: 02px
+                    .icon
+                        margin-right: 01vw 
+                        padding: 0

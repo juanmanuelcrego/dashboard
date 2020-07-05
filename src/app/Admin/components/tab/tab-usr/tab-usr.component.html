@@ -1,0 +1,235 @@
+<section class="accordion">
+    <!-- GANANCIA DIARIA -->
+    <mat-accordion>
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    ABM usuarios
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-tab-group mat-align-tabs="center">
+                <mat-tab label="Nuevo usuario">
+                    <form action="">
+                        <label>Nombre</label>
+                        <input type="text">
+                        <label for="">Apellido</label>
+                        <input type="text">
+                        <label for="">Usuario</label>
+                        <input type="text">
+                        <label for="">Contraseña</label>
+                        <input type="password">
+                        <label for="">e-mail</label>
+                        <input type="mail">
+                        <label for="">Agencia</label>
+                        <select name="" id="">
+                            <option selected value="">Pilar</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        <div class="checks">
+                        <label for="">Perfil:</label>
+                            <div>
+                            <label for="admin">Administrador</label>
+                            <input type="checkbox" name="admin" id="admin">
+                        </div>
+                        <div>
+                            <label for="operador">Operador</label>
+                            <input type="checkbox" name="operador" id="operador">
+                        </div>
+                        <div>
+                            <label for="agenciero">Agenciero</label>
+                            <input type="checkbox" name="agenciero" id="agenciero">
+                        </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn">Aceptar</button>
+                            <button class="btn">Cancelar</button>
+                        </div>
+                    </form>
+                </mat-tab>
+                <mat-tab label="Editar usuario">
+                    <form action="">
+                        <label>Nombre</label>
+                        <input type="text">
+                        <label for="">Apellido</label>
+                        <input type="text">
+                        <label for="">Usuario</label>
+                        <input type="text">
+                        <label for="">Contraseña</label>
+                        <input type="password">
+                        <label for="">e-mail</label>
+                        <input type="mail">
+                        <label for="">Agencia</label>
+                        <select name="" id="">
+                            <option selected value="">Pilar</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        <label for="">Perfil</label>
+                        <div class="checks">
+                            <label for="admin">Administrador</label>
+                            <input type="checkbox" name="admin" id="admin">
+                            <label for="operador">Operador</label>
+                            <input type="checkbox" name="operador" id="operador">
+                            <label for="agenciero">Agenciero</label>
+                            <input type="checkbox" name="agenciero" id="agenciero">
+                        </div>
+                        <div class="buttons">
+                            <button class="btn">Aceptar</button>
+                            <button class="btn">Cancelar</button>
+                        </div>
+                    </form>
+                </mat-tab>
+                <mat-tab label="Eliminar usuario">
+                    <div class="filtrar">
+                        <label for="">Filtrar</label>
+                        <input type="search" name="" id="">
+                        <button class="btn">Buscar</button>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Usuario</th>
+                            <th>Acción</th>
+                        </tr>
+                        <tr>
+                            <td>Juan Manuel</td>
+                            <td>Crego</td>
+                            <td>jcrego</td>
+                            <td>
+                                <button class="btn">Eliminar</button>
+                            </td>
+                        </tr>
+                    </table>
+                </mat-tab>
+            </mat-tab-group>
+        </mat-expansion-panel>
+        <!-- GANANCIA DIARIA POR AGENCIA -->
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Permisos
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <form action="">
+
+                <!-- PERMISOS ADMIN -->
+                <h1>Permisos Administrador</h1>
+                <div class="permisos">
+                <div>
+                    <label for="permiso1">Permiso 1</label>
+                    <input type="checkbox" name="permiso1" id="permiso1">
+                </div>
+                <div>
+                    <label for="permiso2">Permiso 2</label>
+                    <input type="checkbox" name="permiso2" id="permiso2">
+                </div>
+                <div>
+                    <label for="permiso3">Permiso 3</label>
+                    <input type="checkbox" name="permiso3" id="permiso3">
+                </div>
+                <div>
+                    <label for="permiso4">Permiso 4</label>
+                    <input type="checkbox" name="permiso4" id="permiso4">
+                </div>
+                <div>
+                    <label for="permiso5">Permiso 5</label>
+                    <input type="checkbox" name="permiso5" id="permiso5">
+                </div>
+                <div>
+                    <label for="permiso6">Permiso 6</label>
+                    <input type="checkbox" name="permiso6" id="permiso6">
+                </div>
+            </div>
+
+            <!-- PERMISOS OPERADOR -->
+            <h1>Permisos Operador</h1>
+            <div class="permisos">
+            <div>
+                <label for="permiso1">Permiso 1</label>
+                <input type="checkbox" name="permiso1" id="permiso1">
+            </div>
+            <div>
+                <label for="permiso2">Permiso 2</label>
+                <input type="checkbox" name="permiso2" id="permiso2">
+            </div>
+            <div>
+                <label for="permiso3">Permiso 3</label>
+                <input type="checkbox" name="permiso3" id="permiso3">
+            </div>
+            <div>
+                <label for="permiso4">Permiso 4</label>
+                <input type="checkbox" name="permiso4" id="permiso4">
+            </div>
+            <div>
+                <label for="permiso5">Permiso 5</label>
+                <input type="checkbox" name="permiso5" id="permiso5">
+            </div>
+            <div>
+                <label for="permiso6">Permiso 6</label>
+                <input type="checkbox" name="permiso6" id="permiso6">
+            </div>
+        </div>
+
+        <!-- PERMISOS AGENCIERO -->
+        <h1>Permisos Agenciero</h1>
+        <div class="permisos">
+        <div>
+            <label for="permiso1">Permiso 1</label>
+            <input type="checkbox" name="permiso1" id="permiso1">
+        </div>
+        <div>
+            <label for="permiso2">Permiso 2</label>
+            <input type="checkbox" name="permiso2" id="permiso2">
+        </div>
+        <div>
+            <label for="permiso3">Permiso 3</label>
+            <input type="checkbox" name="permiso3" id="permiso3">
+        </div>
+        <div>
+            <label for="permiso4">Permiso 4</label>
+            <input type="checkbox" name="permiso4" id="permiso4">
+        </div>
+        <div>
+            <label for="permiso5">Permiso 5</label>
+            <input type="checkbox" name="permiso5" id="permiso5">
+        </div>
+        <div>
+            <label for="permiso6">Permiso 6</label>
+            <input type="checkbox" name="permiso6" id="permiso6">
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="btn">Guardar</button>
+        <button class="btn">Cancelar</button>
+    </div>
+            </form>
+        </mat-expansion-panel>
+    </mat-accordion>
+
+    <!-- CAMBIO DE CLAVE -->
+    <mat-accordion>
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Cambio de clave personal
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <form action="">
+                <label for="">Contraseña actual</label>
+                <input type="password" name="" id="">
+                <label for="">Contraseña nueva</label>
+                <input type="password" name="" id="">
+                <label for="">Repetí la contraseña nueva</label>
+                <input type="password" name="" id="">
+                <div class="buttons">
+                    <button class="btn">Guardar</button>
+                    <button class="btn">Cancelar</button>
+                </div>
+            </form>
+        </mat-expansion-panel>
+    </mat-accordion>
+</section>
